@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author">
+    <title>Flex Box</title>
+    <link rel="stylesheet" href="">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+ID:wght@100..400&display=swap');
+    *{
+    margin :0;
+    padding :0;
+    box-sizing:border-box;
+    }
+    body {
+        min-height: 100dvh;
+        font-family:"courgatte",Lobster Two,Playwrite Indonesia , Libre Baskerville;
+        font-size: 16px;
+        background-color: white;
+        color: white;
+    }
+    section{
+        padding: 1rem;
+    }
+    .box{    /* class of name box created */
+        background-color: darkred;   
+    }
+    .fc {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        justify-content: flex-start;
+        justify-content: flex-end;
+        justify-content: center;
+        align-items: flex-start;
+        align-items: flex-end;
+        align-items: center;
+    } 
+    </style>
+</head>
+<body>
+    <section class="box" style="height:10vh">Header/Navbar</section> 
+    <section class="fc" style="height: 80vh;background-color: white;">
+        <main class="box" style="height: 150px; width: 200px; padding: 10px;">
+        Main 1
+        </main>
+        <main class="box" style="height: 150px; width: 200px; padding: 10px;">
+            Main 2
+        </main>
+        
+    </section>
+    <section
+    class ="box"
+    style="position: absolute ; bottom: 0 ; left: 0 ; height: 10vh ; width:100% ;">
+    Footer
+</section>
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background: black;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .bfe {
+            width: 1200px;
+            min-height: 80vh;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .grid-container {
+            display: grid;
+            height: calc(80vh - 80px);
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 60px 1fr 60px;
+        }
+
+        .cell {
+            border: 1px solid grey;
+            padding: 12px 15px;
+            box-sizing: border-box;
+        }
+
+        .content-left {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .content-right {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .box {
+            width: 120px;
+            height: 90px;
+            background: dodgerblue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 1.2;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<section class="bfe">
+    <div class="title">BFE</div>
+
+    <section class="grid-container">
+        <div class="cell"><b>Logo</b></div>
+        <div class="cell"><b>Links</b></div>
+
+        <div class="cell content-left">
+            <div class="box">Small<br>Square Box</div>
+        </div>
+        <div class="cell content-right">
+            <div class="box">Small<br>Square Box</div>
+        </div>
+
+        <div class="cell"><b>Footer1</b></div>
+        <div class="cell"><b>Footer2</b></div>
+    </section>
+</section>
+
+</body>
+</html>
