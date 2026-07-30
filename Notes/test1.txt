@@ -1,0 +1,26 @@
+Question 1:- What do you know about functions ?
+Answer:- Functions are reusable blocks of code that perform a specific task. 
+They can take inputs (parameters), execute statements, and return a result. 
+In programming, functions help organize code, reduce repetition, and make programs easier to read and maintain.
+
+Question 2:- What is layout ?
+Answer:- Layout refers to how elements are arranged and spaced on a web page or screen. 
+It defines the structure and visual organization of content, including positioning, alignment, size, and flow. 
+Good layout helps users understand and navigate information clearly.
+
+Question 3:- What do you know about flex layout ?
+Answer:- Flex layout, or CSS Flexbox, is a one-dimensional layout model for arranging items in a row or column. 
+It makes it easy to align, distribute space, and reorder elements within a container. 
+Flexbox is useful for responsive designs because it can adapt item sizes and positions automatically.
+
+Question 4:- What is the need of the grid layout ?
+Answer:- The grid layout provides a two-dimensional system for placing elements in rows and columns. 
+It is useful when designing complex page structures with both horizontal and vertical alignment. 
+CSS Grid gives precise control over layout areas, making it easier to build responsive and consistent designs.
+
+Question 5:- What is the use GitHub ?
+Answer:- GitHub is a web-based platform for hosting and collaborating on code using Git version control. 
+It allows developers to track changes, work together on projects, manage issues, and share code repositories. 
+GitHub also supports code review, project documentation, and deployment workflows.
+
+
