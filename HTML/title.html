@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class="fcx">&#9812;</header>
+        <main>
+            <h3>List 1</h3>
+            <ul id="u1">
+                <li>One </li>
+                <li>Two</li>
+                <li>Three</li>
+            </ul>
+            <br>
+            <h3>List 2</h3>
+            <ul id="u2">
+                <li>FOur </li>
+                <li>Five</li>
+                <li>Six</li>
+            </ul>
+        </main>
+        <footer class="fcx">&#9814;</footer>
+        <script>
+            var ul=document.getElementsByTagName("ul");
+            var ul=document.querySelectorAll("ul");
+            ul[0].style.cssText="background-color:Lightgreen; color:white;";
+            ul[1].style.cssText="background-color:Lightblue; color:white;";
+            let ul0=ul[0].firstElementChild;
+            ul0.style.fontSize="1.5rem";
+            ul0.nextElementSibling.style.color="yellow";
+            let ul1=ul[1].lastElementChild;
+            ul1.style.color="green";
+        </script>
+    </body>
+</html>
