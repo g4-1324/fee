@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO-App</title>
     <style>
-
         body {
             background: #111;
             color: white;
@@ -22,12 +22,121 @@
             border-radius: 10px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         }
+
         .box:hover {
             border: 2px solid skyblue;
         }
+
+        h2 {
+            text-align: center;
+        }
+
+        .input {
+            display: flex;
+            gap: 10px;
+        }
+
+        input {
+            outline: none;
+            border: 1px solid skyblue;
+            background: #222;
+            color: silver;
+            padding: 5px 10px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+        }
+
+        input:focus {
+            outline: 2px solid skyblue;
+        }
+
+        button {
+            padding: 5px 10px;
+            border: none;
+            background: dodgerblue;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: green;
+        }
+
+        ul {
+            text-decoration: none;
+            text-align: center;
+            padding: 0;
+        }
+
+        li {
+            margin-top: 5px;
+            padding: 3px 10px;
+            background: skyblue;
+            color: indigo;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn2 {
+            background: red;
+        }
+
+        .btn2.hover {
+            background: darkred;
+        }
     </style>
 </head>
+
 <body>
-    
+    <div class="box">
+        <h2>TODO App</h2>
+
+        <div class="input">
+            <input type="text" id="input" placeholder="Enter a task">
+            <button id="btn1">Add</button>
+        </div>
+
+        <!-- Added missing ul element with id="list" -->
+        <ul id="list"></ul>
+    </div>
+
+    <script>
+        const btn1 = document.querySelector("#btn1");
+        const inputField = document.querySelector("#input");
+
+        btn1.addEventListener("click", addTask);
+
+        // Optional: Allows pressing "Enter" to add a task
+        inputField.addEventListener("keydown", function (e) {
+            if (e.key === "Enter") {
+                addTask();
+            }
+        });
+
+        function addTask() {
+            const task = inputField.value.trim();
+
+            if (task === "") {
+                alert("Please enter a task");
+                return;
+            }
+
+            const li = document.createElement("li");
+            li.innerHTML = `
+                <span>${task}</span>
+                <button class="btn2" onclick="deleteTask(this)">Delete</button>
+            `;
+
+            document.getElementById("list").appendChild(li);
+            inputField.value = "";
+        }
+
+        function deleteTask(button) {
+            button.parentElement.remove();
+        }
+    </script>
 </body>
+
 </html>
